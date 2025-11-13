@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<meta charset="utf-8">
+<meta name="author" content="Verônica">
+<title>Decidi Viajar</title>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+  }
+
+  header {
+    background-color: #ffffff;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #353588;
+    font-size: 40px;
+    
+
+  
+   
+  }
+
+  nav {
+    background-color:#353588;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin: 0 20px;
+    font-size: 20px;
+  }
+nav a:hover {
+  color: #1E90FF; 
+  
+}
+  main {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    padding: 20px;
+    align-items: flex-start; 
+  }
+
+  .col-esquerda {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 35%;
+    height: 100%; 
+    
+  }
+
+  .caixa {
+    background-color: #ffffff;
+ 
+    padding: 15px;
+    flex: 1; 
+    border-radius: 10px;
+  }
+
+  .destaques {
+    width: 60%;
+    background-color: #ffffff;
+  
+    padding: 15px;
+    height: 100%;
+    border-radius: 10px;
+  }
+
+  p {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  footer {
+    background-color:#353588;
+    height: 40px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+  }
+  .mini-destaque {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.mini-destaque img {
+  flex: 1;             
+  
+  border-radius: 5px;
+  cursor: pointer;
+  object-fit: cover;
+}
+.mini-destaque figure {
+  margin: 0;            
+  text-align: center;  
+  flex: 1;             
+}
+
+.mini-destaque figcaption {
+  margin-top: 5px;     
+  font-size: 14px;     
+}
+ .minigaleria-hover {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.minigaleria-hover img {
+  width: 130px;
+  height: 100px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s; 
+}
+
+.minigaleria-hover img:hover {
+  transform: scale(1.9); 
+  z-index: 1; 
+}
+  .icones {
+  position: absolute;
+  right: 30px;     
+  top: 25px;       
+  display: flex;
+  gap: 15px;       
+}
+
+.icones i {
+  font-size: 20px;
+  color: #353588;
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.icones i:hover {
+  color: #1E90FF;
+  transform: scale(1.2);
+}
+
+</style>
+</head>
+<body>
+
+<header>Decidi Viajar  <img src="imagens/avião.jpg" alt="avião" style="height:90px; margin-right:10px;">
+<div class="icones">
+  <i class="fa-brands fa-facebook-f"></i>
+  <i class="fa-brands fa-instagram"></i>
+  <i class="fa-solid fa-magnifying-glass"></i>
+</div>
+</header>
+
+<nav>
+  <a href="index.html">Início</a>
+  <a href="viagens.html">Viagens</a>
+  <a href="destinos.html">Destinos</a>
+  <a href="dicas.html">Dicas</a>
+  <a href="contatos.html">Contatos</a>
+</nav>
+
+<main>
+  
+  <div class="col-esquerda">
+    <div class="caixa">
+      <h3>Bem-vindo(a) ao nosso Blog de Viagens!</h3><br>
+      <p style="font-size: 16px;">"Bem-vindo(a) ao <strong>Decidi Viajar !</strong> Aqui você encontrará tudo o que precisa para planejar
+         viagens inesquecíveis, desde roteiros detalhados e dicas de hospedagem até experiências gastronômicas e culturais.
+          Nosso blog é o seu guia para explorar novos destinos com segurança e diversão, com destaques da semana e
+           mini galerias de fotos que inspiram você a aproveitar cada viagem ao máximo.”</p>
+    </div>
+
+    <div class="caixa">
+      <h3>Belezas Naturais de Fernando de Noronha</h3> <br>
+<div class="minigaleria-hover">
+  <img src="imagens/praia1.jpg" alt="Praia 1" >
+  <img src="imagens/praia 2.jpeg" alt="Praia 2" >
+  <img src="imagens/praia3.jpeg" alt="Praia 3" >
+</div>
+
+      
+    </div>
+  </div>
+
+ 
+  <div class="destaques">
+    <h3>Destaques da Semana</h3><br>
+    <p><h4>Confira os destinos em alta desta semana:</h4></p><br>
+     <div class="mini-destaque">
+    <figure>
+      <a href="safari.html">
+        <img src="imagens/safari.jpg" alt="Safari" width="380" height="250">
+      </a>
+      <figcaption>“ Um safari inesquecível na África para os amantes da natureza.”</figcaption>
+    </figure>
+
+    <figure>
+      <a href="capadocia.html">
+        <img src="imagens/capadocia.jpg" alt="Capadocia" width="380" height="250">
+      </a>
+      <figcaption>“ Explore as paisagens surreais da Capadócia, Turquia, em uma viagem inesquecível.”</figcaption>
+    </figure>
+  </div>
+</div>
+</main>
+
+<footer>
+  © 2025 Decidi Viajar. Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
