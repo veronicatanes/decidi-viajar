@@ -164,6 +164,76 @@ nav a:hover {
   transform: scale(1.2);
 }
 
+
+  
+
+  @media (max-width: 768px) {
+
+  /* Header */
+  header {
+    flex-direction: column;
+    height: auto;
+    font-size: 28px;
+    text-align: center;
+  }
+
+  header img {
+    height: 60px;
+    margin: 10px 0;
+  }
+
+  .icones {
+    position: static;
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  /* Navegação */
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  nav a {
+    margin: 5px 0;
+    font-size: 18px;
+  }
+
+  /* Conteúdo principal */
+  main {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px;
+  }
+
+  .col-esquerda, .destaques {
+    width: 100%;
+  }
+
+  /* Mini galerias e destaques */
+  .minigaleria-hover, .mini-destaque {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .minigaleria-hover img, .mini-destaque img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+
+  /* Texto */
+  p {
+    font-size: 14px;
+  }
+}
+
+
+
+  
+
 </style>
 </head>
 <body>
@@ -234,4 +304,5 @@ nav a:hover {
 </footer>
 
 </body>
+
 </html>
